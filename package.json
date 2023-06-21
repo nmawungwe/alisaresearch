@@ -11,6 +11,7 @@
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@next/bundle-analyzer": "13.1.6",
     "@next/font": "13.1.6",
     "@tailwindcss/forms": "^0.5.3",
@@ -60,7 +61,7 @@
     "husky": "^8.0.0",
     "js-yaml": "4.1.0",
     "lint-staged": "^13.0.0",
-    "prettier": "^2.7.0",
+    "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "typescript": "^4.8.3"
   },
