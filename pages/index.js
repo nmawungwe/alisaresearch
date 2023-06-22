@@ -23,12 +23,12 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
-        <div className="flex flex-col items-center my-6 xl:flex-row gap-x-12 xl:mb-12">
+        <div className="my-6 flex flex-col items-center gap-x-12 xl:mb-12 xl:flex-row">
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I’m Nyasha
             </h1>
-            <h2 className="text-lg prose text-gray-600 dark:text-gray-400">
+            <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
               {`Welcome to my blog - ${siteMetadata.description}, I enjoy reading and following the technology and finance sectors. In my free time, I enjoy developing `}
               <Link href="/projects">side projects</Link>
               {' and '}
@@ -36,8 +36,8 @@ export default function Home({ posts }) {
               {' about them. Have a good read and signup for my future blog posts!'}
             </h2>
           </div>
-          <div className="flex items-center justify-center mx-2 my-12 w-96">
-            <BlogNewsLetterForm  title="Stay updated, receive the latest post straight to your mailbox" />
+          <div className="mx-2 my-12 flex w-96 items-center justify-center">
+            <BlogNewsLetterForm title="Stay updated, receive the latest post straight to your mailbox" />
           </div>
         </div>
         <h2 className="flex pb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
@@ -51,7 +51,7 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
@@ -75,7 +75,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
