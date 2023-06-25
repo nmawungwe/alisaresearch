@@ -2,7 +2,7 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Inter Memos',
+  title: 'Intern Memos',
   author: 'Nyasha Mawungwe',
   headerTitle: 'Intern Memos',
   description: 'Memos of an intern',
