@@ -33,11 +33,11 @@ export default function Home({ posts }) {
               <Link href="/projects">side projects</Link>
               {' and '}
               <Link href="/blog">blogging</Link>
-              {' about them. Have a good read and signup for my future blog posts!'}
+              {' about them. Have a good read!'}
             </h2>
           </div>
           <div className="mx-2 my-12 flex w-96 items-center justify-center">
-            <BlogNewsLetterForm title="Stay updated, receive the latest post straight to your mailbox" />
+            {/* <BlogNewsLetterForm title="Stay updated, receive the latest post straight to your mailbox" /> */}
           </div>
         </div>
         <h2 className="flex pb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
